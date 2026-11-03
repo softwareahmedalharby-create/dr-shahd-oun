@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الأخصائية النفسية والأسرية شهد عبد المنعم عون - الطب النفسي والعلاج السلوكي</title>
+    <style>
+        :root {
+            --primary-purple: #4A154B;
+            --dark-purple: #2D0C2E;
+            --light-purple: #F3E8FF;
+            --accent-purple: #6B217A;
+            --white: #FFFFFF;
+            --gray-text: #555555;
+            --light-bg: #FAF5FF;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--light-bg);
+            color: var(--dark-purple);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* الترويسة */
+        .header-banner {
+            background-color: var(--primary-purple);
+            color: var(--white);
+            padding: 35px 20px;
+            border-radius: 16px;
+            text-align: center;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(74, 21, 75, 0.15);
+        }
+
+        .header-banner h1 {
+            font-size: 26px;
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+
+        .header-banner .subtitle {
+            font-size: 15px;
+            color: var(--light-purple);
+            font-weight: 500;
+        }
+
+        /* أقسام المحتوى */
+        .section-box {
+            background-color: var(--white);
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(74, 21, 75, 0.05);
+            border: 1px solid #E5D5F2;
+        }
+
+        h2 {
+            color: var(--primary-purple);
+            font-size: 20px;
+            margin-bottom: 20px;
+            border-right: 4px solid var(--accent-purple);
+            padding-right: 12px;
+        }
+
+        /* السيرة الذاتية */
+        .bio-list {
+            list-style-type: none;
+        }
+
+        .bio-list li {
+            margin-bottom: 14px;
+            position: relative;
+            padding-right: 22px;
+            color: var(--gray-text);
+            font-size: 15px;
+        }
+
+        .bio-list li::before {
+            content: "•";
+            color: var(--accent-purple);
+            font-size: 22px;
+            position: absolute;
+            right: 0;
+            top: -4px;
+        }
+
+        /* الأقسام النفسية */
+        .departments-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .dept-box {
+            background-color: var(--light-bg);
+            border: 1px solid #E5D5F2;
+            border-radius: 12px;
+            padding: 20px;
+            transition: transform 0.2s;
+        }
+
+        .dept-box:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(107, 33, 122, 0.08);
+        }
+
+        .dept-box h3 {
+            color: var(--primary-purple);
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+
+        .dept-box p {
+            color: var(--gray-text);
+            font-size: 13.5px;
+            line-height: 1.5;
+        }
+
+        /* نموذج تسجيل الدخول */
+        .login-card {
+            background: linear-gradient(135deg, #FAF5FF 0%, #F3E8FF 100%);
+            border: 2px solid #D4BEE4;
+            border-radius: 14px;
+            padding: 30px;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .login-card p {
+            text-align: center;
+            color: var(--primary-purple);
+            font-weight: 600;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 12px 15px;
+            font-size: 14px;
+            border: 1px solid #D4BEE4;
+            border-radius: 8px;
+            outline: none;
+            background-color: var(--white);
+            transition: border-color 0.3s;
+        }
+
+        .form-input:focus {
+            border-color: var(--accent-purple);
+            box-shadow: 0 0 0 3px rgba(107, 33, 122, 0.1);
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 12px;
+            background-color: var(--primary-purple);
+            color: var(--white);
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 10px;
+        }
+
+        .submit-btn:hover {
+            background-color: var(--accent-purple);
+        }
+
+        .footer-note {
+            text-align: center;
+            font-size: 13px;
+            color: var(--accent-purple);
+            margin-top: 30px;
+            border-top: 1px solid #F0E6F7;
+            padding-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- ترويسة الموقع -->
+        <div class="header-banner">
+            <h1>الأخصائية النفسية والأسرية شهد عبد المنعم عون</h1>
+            <div class="subtitle">استشارية الطب النفسي والعلاج السلوكي</div>
+        </div>
+
+        <!-- السيرة الذاتية والمهنية -->
+        <div class="section-box">
+            <h2>السيرة الذاتية والمهنية</h2>
+            <ul class="bio-list">
+                <li><strong>النبذة المهنية:</strong> استشارية متخصصة في تقديم الاستشارات النفسية والأسرية، التشخيص الإكلينيكي، والعلاج المعرفي السلوكي لدعم التوازن النفسي وجودة الحياة للمرضى والعائلات.</li>
+                <li><strong>المؤهلات العلمية:</strong> حاصلة على درجات علمية رفيعة واختصاص عالٍ في الأمراض النفسية والعصبية والعلاج النفسي والأبوي.</li>
+                <li><strong>الخبرة العملية:</strong> سنوات طويلة من الخبرة الميدانية والعيادية في علاج الاضطرابات المزاجية ونفسية الأفراد والمراهقين والأسرة.</li>
+                <li><strong>النشاط المهني:</strong> مشاركة فعالة في الندوات التوعوية والمؤتمرات الطبية المتخصصة في تطوير الصحة النفسية والأسرية محلياً وعالمياً.</li>
+            </ul>
+        </div>
+
+        <!-- أقسام العيادة والاضطرابات النفسية -->
+        <div class="section-box">
+            <h2>أقسام العيادة والاضطرابات النفسية</h2>
+            <div class="departments-grid">
+                <div class="dept-box">
+                    <h3>1. اضطرابات المزاج</h3>
+                    <p>علاج الاكتئاب بمختلف مراحله، واضطراب ثنائي القطب، والتقلبات المزاجية الحادة.</p>
+                </div>
+                <div class="dept-box">
+                    <h3>2. القلق والوسواس القهري</h3>
+                    <p>التعامل مع اضطرابات القلق العام، نوبات الهلع، الوسواس القهري، والرهاب الاجتماعي.</p>
+                </div>
+                <div class="dept-box">
+                    <h3>3. الصدمات وإدارة الضغوط</h3>
+                    <p>العلاج المتخصص لآثار الصدمات النفسية، ضغوط الحياة اليومية، ومشاكل التأقلم.</p>
+                </div>
+                <div class="dept-box">
+                    <h3>4. الاستشارات الأسرية</h3>
+                    <p>حل النزاعات الأسرية، تعزيز التواصل الصحي بين الأزواج، والدعم الإرشادي للعائلات.</p>
+                </div>
+                <div class="dept-box">
+                    <h3>5. اضطرابات النوم</h3>
+                    <p>علاج الأرق المزمن واضطرابات النوم المرتبطة بالحالات النفسية والضغوط العصبية.</p>
+                </div>
+                <div class="dept-box">
+                    <h3>6. الصحة النفسية للمرأة</h3>
+                    <p>الدعم النفسي المتخصص خلال مراحل الحمل، اكتئاب ما بعد الولادة، وتغيرات المزاج الهرمونية.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- بوابة تسجيل دخول المرضى -->
+        <div class="section-box">
+            <h2>بوابة تسجيل دخول المرضى</h2>
+            <div class="login-card">
+                <p>سجّل الدخول لمتابعة جلستك وملفك الطبي بسرية تامة</p>
+                <form onsubmit="event.preventDefault();">
+                    <div class="form-group">
+                        <input type="text" class="form-input" placeholder="البريد الإلكتروني أو الرقم الطبي" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-input" placeholder="كلمة المرور" required>
+                    </div>
+                    <button type="submit" class="submit-btn">تسجيل الدخول بأمان</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-note">
+          
+          <a href="https://wa.me/218922287530"
+   target="_blank"
+   style="position:fixed;bottom:20px;left:20px;
+   background:#25D366;color:white;padding:13px 20px;
+   border-radius:30px;text-decoration:none;
+   font-weight:bold;z-index:999;">
+   WhatsApp تواصل معنا
+</a>
+            🔒 جميع البيانات والجلسات النفسية لدى الأخصائية النفسية والأسرية شهد عبد المنعم عون محمية ومشفرة وفق أعلى معايير الخصوصية الطبية.
+        </div>
+    </div>
+
+</body>
+</html>
